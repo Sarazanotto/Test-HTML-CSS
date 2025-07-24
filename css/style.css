@@ -61,7 +61,7 @@ header img {
 header {
     padding-top: 45px;
     position: relative;
-    
+
 }
 
 .slogan-container {
@@ -95,7 +95,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .card {
@@ -190,7 +190,7 @@ header {
     border-radius: 5px;
 }
 
-.input-start-learn .background:first-child{
+.input-start-learn .background:first-child {
     background-color: #d52349;
 }
 
@@ -202,93 +202,270 @@ header {
     background-color: #4a4244;
 }
 
-.portfolio{
+.portfolio,
+.blog {
     background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     gap: 30px;
-   padding: 100px 200px;
+    padding: 80px 100px 0;
 }
 
-.portfolio h2{
+.portfolio h2 {
     position: relative;
     width: 100%;
     text-align: center;
 }
 
 .portfolio h2::before,
-.portfolio h2::after{
+.portfolio h2::after {
     content: "";
     position: absolute;
     top: 50%;
-    width: 40%;
+    width: 45%;
     height: 0.5px;
-    background-color:#827a7c76;
+    background-color: #827a7c76;
 }
 
-.portfolio h2::before{
+.portfolio h2::before {
     left: 0;
 }
-.portfolio h2::after{
+
+.portfolio h2::after {
     right: 0;
 }
 
 
-.portfolio-card-container{
+.portfolio-card-container,
+.blog-card-container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
-
-gap: 40px;
-  
+    padding-top: 30px;
+    gap: 40px;
+    justify-content: center;
 }
 
-.portfolio-card{
-     background-color: #ffff;
-     width: 30%;
-     padding-bottom: 40px;
-      border-bottom: solid 1px #ccc;
+.portfolio-card {
+    background-color: #ffff;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+
+    border-bottom: solid 1px #ccc;
 }
 
-.portfolio-card-image{
-width: 100%;
-
+.portfolio-card-image {
+    width: 100%;
 }
 
-.portfolio-card-image img{
+.portfolio-card-image img {
     width: 100%;
     object-fit: contain;
 }
 
-.portfolio-card-content{
+.portfolio-card-content,
+.blog-card-content {
     display: flex;
     flex-direction: column;
-   gap: 10px;
-   align-items: center;
-   padding-top: 10px;
+    gap: 20px;
+    align-items: start;
+    padding: 30px 25px;
 }
 
-.portfolio-card-content h3{
+.portfolio-card-content h3,
+.blog-card-content h3 {
     color: #252122;
 }
 
-.portfolio-card-content p{
+.portfolio-card-content p,
+.blog-card-content p,
+.card-blandit-text {
     color: #827a7c;
     line-height: 30px;
     font-weight: 100;
-    padding: 20px;
+
 }
 
-.portfolio-card-content button{
+.portfolio-card-content button {
     background-color: #221e1f;
     padding: 15px 25px;
     color: #ffff;
     border-radius: 5px;
     border: none;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
 
+.blog h2 {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
 
+.blog h2::before,
+.blog h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 0.5px;
+    background-color: #827a7c76;
+}
 
+.blog h2::before {
+    left: 0;
+}
+
+.blog h2::after {
+    right: 0;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    max-width: 600px;
+    min-width: 400px;
+    gap: 40px;
+    background-color: #ffffff;
+    border-bottom: solid 1px #ccc;
+}
+
+.blog-card-image {
+    width: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    background-color: #d52349;
+}
+
+.blog-card-image img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.blog-card-content p:nth-child(2) {
+    font-style: italic;
+    /*HELP perchè due e non 1? se specifico p*/
+}
+
+.blog-card-button {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.blog-card-button button {
+    color: #ffff;
+    padding: 15px 26px;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 700;
+
+}
+
+.blog-card button:first-child {
+    background-color: #d52349;
+}
+
+.blog-card button:last-child {
+    background-color: #221e1f;
+}
+
+.blog {
+    padding: 80px;
+}
+
+footer {
+    background-color: #221e1f;
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.footer-left-blandit h3 {
+    color: white;
+    padding: 40px 0 0;
+}
+
+.card-blandit {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    border-bottom: 1px solid #4a4244;
+    padding-top: 30px;
+
+}
+
+.card-blandit-icon {
+    background-color: #d52349;
+    height: 55px;
+    width: 55px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date p {
+    color: #ffff;
+
+    line-height: 20px;
+
+}
+
+.date p:nth-child(2) {
+    font-size: 30px;
+}
+
+.triangolo {
+    position: absolute;
+    left: 40px;
+    top: -1px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #d52349;
+    border-top: 29px solid transparent;
+    border-bottom: 29px solid transparent;
+}
+
+.card-blandit-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-blandit-title {
+    color: #ffff;
+}
+
+.footer-left-links {
+    background-color: #bf5f74;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    min-width: 300px;
+    /*con la min*/
+
+}
+
+.footer-left-link h4 {
+    color: #ffff;
+}
+
+.footer-left-link li,
+a {
+    color: #4a4244;
+    list-style: none;
+}
