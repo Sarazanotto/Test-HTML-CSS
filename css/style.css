@@ -383,19 +383,22 @@ footer {
     background-color: #221e1f;
     width: 100%;
     display: flex;
-    padding: 0 100px;
+    padding: 0 150px;
     gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     min-width: 400px;
 }
 
 .footer-left-blandit h3,
-.footer-left-link h2{
+.footer-left-link h2,
+.footer-right-top h2 {
     color: white;
     padding: 40px 0 0;
 }
@@ -403,14 +406,16 @@ footer {
 .card-blandit {
     display: flex;
     gap: 35px;
-    
+
     border-bottom: 1px solid #4a4244;
     padding: 30px 0 15px;
 }
 
-.footer-left .footer-left-blandit .card-blandit:not(:last-child){
+.footer-left .footer-left-blandit .card-blandit:not(:last-child) {
     border-bottom: 1px solid #4a4244;
-} /*NON CAPISCO*/
+}
+
+/*NON CAPISCO*/
 
 .card-blandit-icon {
     background-color: #d52349;
@@ -457,15 +462,19 @@ footer {
 }
 
 .footer-left-links {
-    
+
     display: flex;
     justify-content: space-between;
     min-width: 200px;
+    gap: 40px;
 
 }
-.footer-left-link{
-    width: 380px;
-    
+
+.footer-left-link {
+    width: 50%;
+
+
+
 }
 
 .footer-left-link h4 {
@@ -480,11 +489,24 @@ a {
     text-decoration-thickness: 0.5px;
 }
 
-.footer-left-link li{
+.footer-left-link li {
     padding: 20px 0;
     border-bottom: 1px solid #4a4244;
 }
 
-.footer-right{
+.footer-right {
     width: 30%;
+}
+
+.footer-right-top-image {
+    width: 100%;
+    height: 200px;
+
+}
+
+.footer-right-top-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: none;
 }
