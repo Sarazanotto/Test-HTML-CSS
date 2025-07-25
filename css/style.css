@@ -384,27 +384,33 @@ footer {
     width: 100%;
     display: flex;
     padding: 0 100px;
+    gap: 30px;
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
+    min-width: 400px;
 }
 
-.footer-left-blandit h3 {
+.footer-left-blandit h3,
+.footer-left-link h2{
     color: white;
     padding: 40px 0 0;
 }
 
 .card-blandit {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 35px;
+    
     border-bottom: 1px solid #4a4244;
-    padding-top: 30px;
-
+    padding: 30px 0 15px;
 }
+
+.footer-left .footer-left-blandit .card-blandit:not(:last-child){
+    border-bottom: 1px solid #4a4244;
+} /*NON CAPISCO*/
 
 .card-blandit-icon {
     background-color: #d52349;
@@ -431,7 +437,7 @@ footer {
 
 .triangolo {
     position: absolute;
-    left: 40px;
+    left: 50px;
     top: -1px;
     bottom: 0;
     width: 0;
@@ -451,13 +457,15 @@ footer {
 }
 
 .footer-left-links {
-    background-color: #bf5f74;
+    
     display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    min-width: 300px;
-    /*con la min*/
+    justify-content: space-between;
+    min-width: 200px;
 
+}
+.footer-left-link{
+    width: 380px;
+    
 }
 
 .footer-left-link h4 {
@@ -466,6 +474,17 @@ footer {
 
 .footer-left-link li,
 a {
-    color: #4a4244;
+    color: #ffff;
     list-style: none;
+    font-weight: 100;
+    text-decoration-thickness: 0.5px;
+}
+
+.footer-left-link li{
+    padding: 20px 0;
+    border-bottom: 1px solid #4a4244;
+}
+
+.footer-right{
+    width: 30%;
 }
